@@ -1,0 +1,27 @@
+[
+  {"jsonrpc":"2.0","id":2,"method":"tools/call","params":{
+    "name":"create_learning_path",
+    "arguments":{
+      "root":"Test Learning",
+      "parts":[
+        {"number":1,"title":"first folder","notes":[
+          {"number":1,"title":"first note"},
+          {"number":2,"title":"second note"}
+        ]},
+        {"number":2,"title":"second folder","notes":[
+          {"number":3,"title":"third note"},
+          {"number":4,"title":"fourth note"}
+        ]}
+      ]
+    }
+  }},
+  {"jsonrpc":"2.0","id":3,"method":"tools/call","params":{
+    "name":"save_note",
+    "arguments":{
+      "root":"Test Learning",
+      "part":"01 - first folder",
+      "note":"01 - first note.md",
+      "content":"# first note\n\nThis is the first note.\n\n- It keeps the frontmatter\n- It replaces only the body"
+    }
+  }}
+]
